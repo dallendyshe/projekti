@@ -1,0 +1,835 @@
+---
+title: "SMARTPHONES"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+date: '2022-06-07'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+PUNUAN:
+Dallendyshe Islamaj
+Artiola Brazhda
+
+
+
+
+#Importimi i databazes
+```{r}
+library(readxl)
+smart <- read_excel("C:/Users/user/Desktop/projekti i statistikes/smart.xlsx")
+View(smart)
+```
+#Afishimi i te dhenave per kompanine Apple
+
+```{r}
+head(smart,15)
+```
+
+
+#Afishimi i te dhenave per kompanine Samsung
+
+```{r}
+smart[16:32,c(1,2,3,4,5,6,7,8,9,10)]
+```
+```{r}
+
+
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+
+
+
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Company) +
+  geom_bar(fill = "#112446") +
+  theme_minimal()
+
+#grafik per cmimet
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = "", y = Cmimi) +
+  geom_violin(adjust = 1L, scale = "area", fill = "#FF69B4") +
+  theme_linedraw()
+
+
+```
+
+
+```{r}
+library(plotrix)
+slices <- c(15, 17, 19, 17, 16,15,20,20)
+lbls <- c("Apple", "Samsung", "Hauwei", "Xiaomi", "Nokia","Sony","LG","Honor")
+pie3D(slices,labels=lbls,explode=0.1,
+   main="Kompanite ")
+
+
+
+#Afishimi per kompanine Huawei
+
+smart [33:51,c(1,2,3,4,5,6,7,8,9,10)]
+
+```
+#Afishimi per kompanine Xiaomi
+
+```{r}
+smart[52:68,c(1,2,3,4,5,6,7,8,9,10)]
+
+```
+
+#Afishimi per kompanine Nokia
+```{r}
+smart[69:84,c(1,2,3,4,5,6,7,8,9,10)]
+
+```
+
+#Afishimi per kompanine Sony
+```{r}
+smart[85:99,c(1,2,3,4,5,6,7,8,9,10)]
+
+```
+
+
+#Afishimi per kompanine LG
+```{r}
+smart[100:119,c(1,2,3,4,5,6,7,8,9,10)]
+
+```
+
+#Afishimi per kompanine Honor
+```{r}
+smart[120:139,c(1,2,3,4,5,6,7,8,9,10)]
+
+```
+```{r}
+#afishimi i llojeve te telefonave
+smart$Device
+
+```
+```{r}
+
+
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+#grafiku qe tregon lidhjen mes kompanive dhe cpu
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"
+))) %>%
+ ggplot() +
+ aes(x = `Company`, fill = CPU) +
+ geom_bar() +
+ scale_fill_hue(direction = 1) +
+ coord_flip() +
+ theme_minimal()
+
+
+#grafiku qe tregon lidhjen mes ROM dhe shitjeve
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"
+))) %>%
+ ggplot() +
+ aes(x = Shitjet, size = ROM, group = RAM) +
+ geom_histogram(bins = 30L, fill = "#A61AAB") +
+ coord_flip() +
+ theme_minimal() +
+ facet_wrap(vars(Cores), ncol = 3L)
+
+```
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(hrbrthemes)
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"
+))) %>%
+ ggplot() +
+ aes(x = `Viti i prodhimit`, fill = `Company`) +
+ geom_histogram(bins = 32L) +
+ scale_fill_hue(direction = 1) +
+ coord_flip() +
+ theme_minimal()
+```
+
+
+
+#mesatarja e ROM
+```{r}
+mean(smart$ROM)
+```
+#mesatarja per cores
+```{r}
+mean(smart$Cores)
+```
+
+#mesatarja per cmimin
+```{r}
+mean(smart$Cmimi)
+```
+#mesatarja per shitjet
+```{r}
+mean(smart$Shitjet)
+```
+
+#mesatarja per RAM
+```{r}
+mean(smart$RAM)
+```
+
+```{r}
+#grafik qe tregon cfare cpu kane perdorur kompanite
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Company, y = CPU) +
+  geom_tile(size = 1.5) +
+  theme_light()
+
+
+
+#gpu dhe kompanite
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Company, y = GPU) +
+  geom_tile(size = 1.5) +
+  labs(title = "Kompanite dhe GPU") +
+  theme_light()
+```
+
+
+#mesorja per ROM
+```{r}
+median(smart$ROM)
+
+```
+#mesorja per Cores
+```{r}
+median(smart$Cores)
+```
+#mesorja per cmimin
+```{r}
+median(smart$Cmimi)
+```
+#mesorja per shitjet
+```{r}
+median(smart$Shitjet)
+```
+#mesorja e RAM
+```{r}
+median(smart$RAM)
+```
+```{r}
+#funksioni per te llogaritur moden ne ndryshore cilesore
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+#moda per kompanite
+data <- c(smart$Company)
+# gjej mode
+find_mode(data)
+
+```
+
+
+```{r}
+#funksioni per moden
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+#moda per llojin e telefonit
+data <- c(smart$Device)
+
+find_mode(data)
+
+```
+```{r}
+#funksioni per moden
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+#Moda per CPU
+data <- c(smart$CPU)
+#find mode
+find_mode(data)
+
+```
+```{r}
+#funksioni
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = CPU) +
+  geom_bar(fill = "#4682B4") +
+  theme_light()
+
+#moda per GPU
+data <- c(smart$GPU)
+#find mode
+find_mode(data)
+
+```
+```{r}
+#funksioni per te llogaritur moden
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = GPU) +
+  geom_bar(fill = "#4682B4") +
+  theme_light()
+
+#moda per ROM
+data <- c(smart$ROM)
+
+#find mode
+find_mode(data)
+```
+#funksioni per te llogaritur moden
+```{r}
+  find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = ROM) +
+  geom_histogram(bins = 30L, fill = "#592C64") +
+  theme_gray()
+
+#moda per SCORES
+data <- c(smart$Cores)
+
+#find mode
+find_mode(data)
+
+# function to calculate mode
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Cores) +
+  geom_histogram(bins = 30L, fill = "#FF69B4") +
+  theme_gray()
+
+#moda per Cmimin
+data <- c(smart$Cmimi)
+
+#find mode
+find_mode(data)
+
+#function to calculate mode
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Cmimi) +
+  geom_histogram(bins = 30L, fill = "#487DA8") +
+  theme_gray()
+
+#moda per Shitjet
+data <- c(smart$Shitjet)
+
+#find mode
+find_mode(data)
+#function to calculate mode
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Shitjet) +
+  geom_density(adjust = 1L, fill = "#487DA8") +
+  theme_gray()
+
+#moda per Vitin
+data <- c(smart$`Viti i prodhimit`)
+
+#find mode
+find_mode(data)
+
+#function to calculate mode
+find_mode <- function(x) {
+  u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = `Viti i prodhimit`) +
+  geom_density(adjust = 1L, fill = "#487DA8") +
+  theme_gray()
+
+#define numeric vector with multiple modes
+data <- c(smart$RAM)
+
+#find mode
+find_mode(data)
+find_mode <- function(x) {
+ u <- unique(x)
+  tab <- tabulate(match(x, u))
+  u[tab == max(tab)]
+}
+  
+  smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = "", y = RAM) +
+  geom_violin(adjust = 1L, scale = "area", fill = "#487DA8") +
+  theme_gray()
+```
+#vlera minimale per ROM
+```{r}
+min(smart$ROM)
+```
+#vlera minimale per Cores
+
+```{r}
+min(smart$Cores)
+```
+#vlera minimale per cmimin
+```{r}
+min(smart$Cmimi)
+```
+#vlera minimale per shitjet
+```{r}
+min(smart$Shitjet)
+```
+#vlera minimale per RAM
+```{r}
+min(smart$RAM)
+```
+#vlera max per ROM
+```{r}
+max(smart$ROM)
+```
+#vlera max per cores
+```{r}
+max(smart$Cores)
+```
+#vlera max cmimi
+```{r}
+max(smart$Cmimi)
+```
+#vlera max per numrin e shitjeve
+```{r}
+max(smart$Shitjet)
+```
+#vlera max per RAM
+```{r}
+max(smart$RAM)
+```
+#kuantilet per ROM
+```{r}
+quantile(smart$ROM)
+
+```
+#kuantilet per Cores
+```{r}
+quantile(smart$Cores)
+```
+#kuantilet per Cmimin
+```{r}
+quantile(smart$Cmimi)
+```
+
+#kuantilet per Numrin e shitjeve
+```{r}
+quantile(smart$Shitjet)
+```
+#kuantilet per RAM
+```{r}
+quantile(smart$RAM)
+```
+
+
+#permbledhje per te dhenat
+```{r}
+summary(smart)
+```
+#varianca e ROM
+```{r}
+var(smart$ROM)
+```
+#varianca e cores
+```{r}
+var(smart$Cores)
+```
+#varianca per cmimin
+```{r}
+var(smart$Cmimi)
+```
+
+#varianca per shitjet
+```{r}
+var(smart$Shitjet)
+```
+#varianca per RAM
+```{r}
+var(smart$RAM)
+```
+#menjanimi mesatar katror per ROM
+```{r}
+sd(smart$ROM)
+```
+
+#menjanimi mesatar katror per cORE
+```{r}
+sd(smart$Cores)
+```
+#menjanimi mesatar katror per cmimin
+```{r}
+sd(smart$Cmimi)
+```
+#menjanimi mesatar katror per shitjet
+```{r}
+sd(smart$RAM)
+```
+```{r}
+#ram,rom,kompani,gpu
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = RAM, y = ROM, colour = Company) +
+  geom_point(shape = "asterisk", size = 1.5) +
+  scale_color_brewer(palette = "PuBu", direction = -1) +
+  theme_dark() +
+  facet_wrap(vars(GPU))
+```
+```{r}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = RAM, y = Shitjet, colour = Company) +
+  geom_point(shape = "asterisk", size = 1.5) +
+  scale_color_brewer(palette = "YlOrRd", direction = -1) +
+  labs(title = "Si ka ndikuar RAM dhe GPU ne shitje") +
+  theme_dark() +
+  facet_wrap(vars(GPU))
+```
+
+
+#tabela e kontigjences per kompanine dhe CPU dhe testi hi-katror
+
+```{r}
+table(smart$Company, smart$CPU)
+library("MASS")
+
+# krijojme dataframin nga dataseti i madh
+smart.data <- data.frame(smart$CPU,smart$Company)
+
+#krijojme tabelen
+smart.data = table(smart$CPU,smart$Company) 
+print(smart.data)
+
+# funksioni per hi-katrorin
+print(chisq.test(smart.data))
+```
+
+#tabela e kontigjences dhe testi hi katror qe tregon nese dy ndryshore cilesore GPU dhe kompanine
+```{r}
+table(smart$Company, smart$GPU)
+library("MASS")
+
+# krijojme nje dtaframe nga dataseti
+smart.data <- data.frame(smart$GPU,smart$Company)
+
+# krijojme tabelen
+smart.data = table(smart$GPU,smart$Company) 
+print(smart.data)
+
+#funksioni per hi-katrorin
+print(chisq.test(smart.data))
+```
+
+#tabela e kontigjences per vitin dhe kompanine tregon sa telefona ka prodhuar secila kompani per vite
+```{r}
+table(smart$Company, smart$`Viti i prodhimit`)
+
+```
+```{r}
+#testi hi katror qe tregon nese dy ndryshore cilesore jane te varura apo jo
+
+library("MASS")
+
+# krijojme dataframin nga dataseti
+smart.data <- data.frame(smart$Company,smart$`Viti i prodhimit`)
+
+# krijojme tabelen.
+smart.data = table(smart$Company,smart$`Viti i prodhimit`) 
+print(smart.data)
+
+# funksioni per hi-katrorin
+print(chisq.test(smart.data))
+```
+```{r}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Company, y = `Viti i prodhimit`) +
+  geom_violin(adjust = 1L, scale = "area", fill = "#FF8C00") +
+  theme_minimal()
+```
+
+```{r}
+#testi hi katror qe tregon nese dy ndryshore cilesore jane te varura apo jo
+
+library("MASS")
+
+# .krijojme dataframin nga dataseti
+car.data <- data.frame(smart$GPU,smart$CPU)
+
+# krijojme tabelen
+smart.data = table(smart$GPU,smart$CPU) 
+print(smart.data)
+
+#funksioni per hi-katrorin
+print(chisq.test(smart.data))
+```
+
+```{r}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = CPU, y = GPU) +
+  geom_tile(size = 1.2) +
+  theme_minimal()
+```
+
+
+```{r}
+x <- c(smart$Cmimi)
+y <- c(smart$Shitjet)
+
+# Aplikojme funksionin linear.
+relation <- lm(y~x)
+
+print(relation)
+
+#reja e pikave
+x <- c(smart$Cmimi)
+y <- c(smart$Shitjet)
+
+plot(x,y)
+
+x <- c(smart$Cmimi)
+
+# The resposne vector.
+y <- c(smart$Shitjet)
+
+# Apply the lm() function.
+relation <- lm(y~x)
+
+# parashikojme sa shitje do te kete nqs kemi nje cmim te caktuar
+a <- data.frame(x =1500)
+result <-  predict(relation,a)
+print(result)
+```
+
+```{r}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Shitjet, y = Cmimi) +
+  geom_area(size = 1.5) +
+  theme_minimal()
+```
+
+#regresi linear cmimin dhe ROM
+```{r}
+x <- c(smart$Cmimi)
+y <- c(smart$ROM)
+
+#funksioni
+relation <- lm(y~x)
+
+print(relation)
+#reja e pikave
+plot(x,y)
+x <- c(smart$Cmimi)
+
+y <- c(smart$ROM)
+
+# Apply the lm() function.
+relation <- lm(y~x)
+
+# parashikojme sa ROM do te kete nqs kemi nje cmim te caktuar
+a <- data.frame(x = 300)
+result <-  predict(relation,a)
+print(result)
+
+
+```
+```{r}
+x <- c(smart$ROM)
+y <- c(smart$RAM)
+
+#funksioni
+relation <- lm(y~x)
+
+print(relation)
+
+plot(x,y)
+x <- c(smart$ROM)
+
+y <- c(smart$RAM)
+
+# Apply the lm() function.
+relation <- lm(y~x)
+
+# parashikojme sa ROM do te kete nqs kemi nje cmim te caktuar
+a <- data.frame(x =100)
+result <-  predict(relation,a)
+print(result)
+
+```
+```{r}
+x <- c(smart$Cmimi)
+y <- c(smart$RAM)
+
+#funksioni
+relation <- lm(y~x)
+
+print(relation)
+
+plot(x,y)
+x <- c(smart$Cmimi)
+
+y <- c(smart$RAM)
+
+# Apply the lm() function.
+relation <- lm(y~x)
+
+# parashikojme sa RAM do te kete nqs kemi nje cmim te caktuar
+a <- data.frame(x = 300)
+result <-  predict(relation,a)
+print(result)
+
+```
+
+```{r}
+x <- c(smart$Cmimi)
+y <- c(smart$Cores)
+
+#funksioni
+relation <- lm(y~x)
+
+print(relation)
+
+plot(x,y)
+x <- c(smart$Cmimi)
+
+y <- c(smart$Cores)
+
+# Apply the lm() function.
+relation <- lm(y~x)
+
+# parashikojme sa cores do te kete nqs kemi nje cmim te caktuar
+a <- data.frame(x = 300)
+result <-  predict(relation,a)
+print(result)
+```
+```{r}
+x <- c(smart$RAM)
+y <- c(smart$Cores)
+
+#funksioni
+relation <- lm(y~x)
+
+print(relation)
+
+plot(x,y)
+x <- c(smart$RAM)
+
+y <- c(smart$Cores)
+
+# Apply the lm() function.
+relation <- lm(y~x)
+
+# parashikojme sa RAM do te kete nqs kemi nje cmim te caktuar
+a <- data.frame(x =8)
+result <-  predict(relation,a)
+print(result)
+```
+```{r}
+#grafik
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(x = Cores, y = Cmimi, fill = ROM, colour = Company) +
+  geom_tile(size = 1.5) +
+  scale_fill_gradient() +
+  scale_color_hue(direction = 1) +
+  theme_minimal() +
+  facet_wrap(vars(Company))
+```
+
+```{r}
+smart %>%
+ filter(!(GPU %in% c("PowerVR \r\n", "Mali\r\n", "Adreno \r\n", "IMG\r\n", "Adreno\r\n"))) %>%
+ ggplot() +
+  aes(
+    x = Cmimi,
+    y = Shitjet,
+    fill = `Viti i prodhimit`,
+    colour = Company
+  ) +
+  geom_line(size = 3.05) +
+  scale_fill_gradient() +
+  scale_color_hue(direction = 1) +
+  labs(title = "Kompanite") +
+  theme_minimal() +
+  facet_wrap(vars(Company))
+```
+
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

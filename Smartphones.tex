@@ -1,0 +1,2176 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={SMARTPHONES},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{SMARTPHONES}
+\author{}
+\date{\vspace{-2.5em}2022-06-07}
+
+\begin{document}
+\maketitle
+
+\hypertarget{r-markdown}{%
+\subsection{R Markdown}\label{r-markdown}}
+
+PUNUAN: Dallendyshe Islamaj Artiola Brazhda
+
+\#Importimi i databazes
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(readxl)}
+\NormalTok{smart }\OtherTok{\textless{}{-}} \FunctionTok{read\_excel}\NormalTok{(}\StringTok{"C:/Users/user/Desktop/projekti i statistikes/smart.xlsx"}\NormalTok{)}
+\FunctionTok{View}\NormalTok{(smart)}
+\end{Highlighting}
+\end{Shaded}
+
+\#Afishimi i te dhenave per kompanine Apple
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(smart,}\DecValTok{15}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 15 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Apple   iPhone ~ Appl~ "App~   256     6  1200  2   e7             2021     6
+##  2 Apple   iPhone ~ Appl~ "App~   256     6  1000  1   e7             2021     6
+##  3 Apple   iPhone ~ Appl~ "App~   256     6   800  7.86e6             2021     4
+##  4 Apple   iPad Pr~ Appl~ "App~   256     8  1250  5.10e6             2021     8
+##  5 Apple   Apple i~ Appl~ "App~   256     4   600  9.52e7             2020     4
+##  6 Apple   Apple i~ Appl~ "App~   256     4   250  2.40e7             2016     3
+##  7 Apple   Apple i~ Appl~ "App~   256     4   550  1.02e7             2019     4
+##  8 Apple   Apple i~ Appl~ "App~   256     4   320  2.25e7             2018     4
+##  9 Apple   Apple i~ Appl~ "App~   256     4   250  8.20e6             2018     3
+## 10 Apple   Apple i~ Appl~ "Pow~   128     2   150  1.75e6             2011     8
+## 11 Apple   Apple i~ ARM ~ "Pow~   128     1    80  4.20e6             2008     8
+## 12 Apple   Apple i~ Appl~ "App~   128     6   210  8.63e7             2017     2
+## 13 Apple   Apple i~ Appl~ "Pow~   128     4   180  1.56e8             2016     2
+## 14 Apple   Apple i~ Appl~ "Pow~    64     2   200  1.32e7             2015     2
+## 15 Apple   Apple i~ Appl~ "Pow~    64     2   320  6.20e6             2015     2
+\end{verbatim}
+
+\#Afishimi i te dhenave per kompanine Samsung
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart[}\DecValTok{16}\SpecialCharTok{:}\DecValTok{32}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 17 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Samsung Samsung~ Qual~ Adre~   128     8   520  1   e7             2022     6
+##  2 Samsung Samsung~ Qual~ Adre~   256     8  1300  2.00e6             2022    12
+##  3 Samsung Samsung~ Qual~ Adre~   256     8   950  2.05e7             2022     8
+##  4 Samsung Samsung~ Unis~ IMG      32     8   110  3.2 e6             2021     3
+##  5 Samsung Samsung~ Exyn~ Mali    128     8   150  5.18e7             2021     4
+##  6 Samsung Samsung~ Medi~ Mali    128     8   150  1.42e7             2021     6
+##  7 Samsung Samsung~ Qual~ Adre~    64     4   100  6.20e6             2021     4
+##  8 Samsung Samsung~ Medi~ Mali    128     8   200  1.22e7             2021     6
+##  9 Samsung Samsung~ Qual~ Mali    256     8  1200  2.02e7             2021    12
+## 10 Samsung Samsung~ Exyn~ Mali    256     8   900  1.86e7             2020     8
+## 11 Samsung Samsung~ Exyn~ Mali     64     6   190  5.52e7             2016     4
+## 12 Samsung Samsung~ Exyn~ Mali     16     4   130  6.20e6             2015     1
+## 13 Samsung Samsung~ ARM ~ ARM ~   512     2    70  1.02e7             2015     4
+## 14 Samsung Samsung~ Qual~ Adre~    16     4   160  3.03e7             2015     1
+## 15 Samsung Samsung~ Qual~ Adre~    16     4   200  1.70e7             2015     1
+## 16 Samsung Samsung~ Qual~ Adre~    32     4   600  9.20e6             2015     3
+## 17 Samsung Samsung~ Qual~ Adre~    32     4   420  5.2 e6             2013     3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attache Paket: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## Die folgenden Objekte sind maskiert von 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## Die folgenden Objekte sind maskiert von 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(hrbrthemes)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## NOTE: Either Arial Narrow or Roboto Condensed fonts are required to use these themes.
+\end{verbatim}
+
+\begin{verbatim}
+##       Please use hrbrthemes::import_roboto_condensed() to install Roboto Condensed and
+\end{verbatim}
+
+\begin{verbatim}
+##       if Arial Narrow is not on your system, please see https://bit.ly/arialnarrow
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Company) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{fill =} \StringTok{"\#112446"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-4-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#grafik per cmimet}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \StringTok{""}\NormalTok{, }\AttributeTok{y =}\NormalTok{ Cmimi) }\SpecialCharTok{+}
+  \FunctionTok{geom\_violin}\NormalTok{(}\AttributeTok{adjust =}\NormalTok{ 1L, }\AttributeTok{scale =} \StringTok{"area"}\NormalTok{, }\AttributeTok{fill =} \StringTok{"\#FF69B4"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_linedraw}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-4-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(plotrix)}
+\NormalTok{slices }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{15}\NormalTok{, }\DecValTok{17}\NormalTok{, }\DecValTok{19}\NormalTok{, }\DecValTok{17}\NormalTok{, }\DecValTok{16}\NormalTok{,}\DecValTok{15}\NormalTok{,}\DecValTok{20}\NormalTok{,}\DecValTok{20}\NormalTok{)}
+\NormalTok{lbls }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"Apple"}\NormalTok{, }\StringTok{"Samsung"}\NormalTok{, }\StringTok{"Hauwei"}\NormalTok{, }\StringTok{"Xiaomi"}\NormalTok{, }\StringTok{"Nokia"}\NormalTok{,}\StringTok{"Sony"}\NormalTok{,}\StringTok{"LG"}\NormalTok{,}\StringTok{"Honor"}\NormalTok{)}
+\FunctionTok{pie3D}\NormalTok{(slices,}\AttributeTok{labels=}\NormalTok{lbls,}\AttributeTok{explode=}\FloatTok{0.1}\NormalTok{,}
+   \AttributeTok{main=}\StringTok{"Kompanite "}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Afishimi per kompanine Huawei}
+
+\NormalTok{smart [}\DecValTok{33}\SpecialCharTok{:}\DecValTok{51}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 19 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Huawei  Huawei ~ Qual~ "Adr~   256     8   600  6.80e6             2021     8
+##  2 Huawei  Huawei ~ Qual~ "Adr~   256     8   370  4.96e6             2022     8
+##  3 Huawei  Huawei ~ Qual~ "Adr~   256     8   400  1.65e7             2021     8
+##  4 Huawei  Huawei ~ Qual~ "Adr~   256     8   720  8.20e6             2021     8
+##  5 Huawei  Huawei ~ Kirin "Mal~   256     8   600  1.02e7             2021     8
+##  6 Huawei  Huawei ~ Kirin "Mal~   256     8  3120  5.50e6             2021     8
+##  7 Huawei  Huawei ~ Kirin "Mal~   256     8   550  1.55e7             2021     8
+##  8 Huawei  Huawei ~ Kirin "Mal~   128     8   255  6.9 e6             2020     6
+##  9 Huawei  Huawei ~ Kirin "Mal~   256     8   400  1.26e7             2020     6
+## 10 Huawei  Huawei ~ Kirin "Mal~   128     8   280  2.02e7             2019     8
+## 11 Huawei  Huawei ~ Kirin "Mal~   256     8  1600  1.23e7             2020     2
+## 12 Huawei  Huawei ~ Kirin "Mal~   128     8   250  7.80e6             2019     4
+## 13 Huawei  Huawei ~ Qual~ "Adr~    32     4   230  9.54e6             2016     3
+## 14 Huawei  Huawei ~ Kirin "Mal~    16     4   210  1.65e7             2016     3
+## 15 Huawei  Huawei ~ Qual~ "Adr~   128     4   240  1.35e7             2015     3
+## 16 Huawei  Huawei ~ Qual~ "Adr~     8     4    90  2.07e7             2015     2
+## 17 Huawei  Huawei ~ Qual~ "Adr~    64     8   200  1.89e7             2019     3
+## 18 Huawei  Huawei ~ Kirin "Mal~   256     8   800  1.65e7             2018     8
+## 19 Huawei  Huawei ~ Kirin "Mal~   128     8   350  2.63e7             2018     8
+\end{verbatim}
+
+\#Afishimi per kompanine Xiaomi
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart[}\DecValTok{52}\SpecialCharTok{:}\DecValTok{68}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 17 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Xiaomi  Xiaomi ~ Medi~ "Mal~   128     8   150  5.60e6             2022     8
+##  2 Xiaomi  Xiaomi ~ Medi~ "Mal~   128     8   148  8.60e6             2022     6
+##  3 Xiaomi  Xiaomi ~ Qual~ "Adr~   256     8   350  1.56e7             2022    12
+##  4 Xiaomi  Xiaomi ~ Qual~ "Adr~   128     8   194  2.39e7             2022     8
+##  5 Xiaomi  Xiaomi ~ Qual~ "Adr~   256     8   500  1.72e6             2022    12
+##  6 Xiaomi  Xiaomi ~ Medi~ "Mal~   128     8   285  1.35e7             2022     6
+##  7 Xiaomi  Xiaomi ~ Medi~ "Mal~   128     8   155  3.08e7             2021     6
+##  8 Xiaomi  Xiaomi ~ Medi~ "Mal~   128     8   200  2.39e7             2021     4
+##  9 Xiaomi  Xiaomi ~ Qual~ "Adr~   256     8   900  1.47e7             2021    12
+## 10 Xiaomi  Xiaomi ~ Qual~ "Adr~   128     8   350  3.58e7             2019    12
+## 11 Xiaomi  Xiaomi ~ Qual~ "Adr~    64     8   130  1.26e7             2019     4
+## 12 Xiaomi  Xiaomi ~ Qual~ "Adr~   128     8   180  8.60e6             2019     4
+## 13 Xiaomi  Xiaomi ~ Qual~ "Adr~   128     8   310  2.96e7             2018     6
+## 14 Xiaomi  Xiaomi ~ Qual~ "Adr~   128     4   240  4.05e7             2016     4
+## 15 Xiaomi  Xiaomi ~ Lead~ "Mal~     8     4   130  1.63e7             2015     1
+## 16 Xiaomi  Xiaomi ~ Qual~ "Adr~     8     4   160  3.66e7             2014     2
+## 17 Xiaomi  Xiaomi ~ Medi~ "Mal~   256     8   220  4.05e7             2019     8
+\end{verbatim}
+
+\#Afishimi per kompanine Nokia
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart[}\DecValTok{69}\SpecialCharTok{:}\DecValTok{84}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 16 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Nokia   Nokia C~ Unis~ "IMG"    64     8   245  3.50e6             2022     4
+##  2 Nokia   Nokia C~ Unis~ "IMG"    64     8    80  6.90e6             2022     3
+##  3 Nokia   Nokia G~ Unis~ "Mal~   128     8   230  1.03e7             2022     6
+##  4 Nokia   Nokia G~ Qual~ "Adr~    64     8   200  2.06e7             2021     4
+##  5 Nokia   Nokia G~ Qual~ "Adr~   128     8   250  2.16e7             2021     6
+##  6 Nokia   Nokia C~ Unis~ "IMG~    64     8   100  1.33e7             2021     3
+##  7 Nokia   Nokia C~ Unis~ "IMG~    32     4    90  5.59e6             2021     2
+##  8 Nokia   Nokia C~ Unis~ "Mal~    32     4    80  7.65e6             2021     2
+##  9 Nokia   Nokia G~ Medi~ "Pow~    64     8   130  1.03e7             2021     4
+## 10 Nokia   Nokia 3~ Qual~ "Adr~    64     8   150  1.56e7             2020     4
+## 11 Nokia   Nokia C~ Medi~ "Pow~    64     8   150  1.13e7             2020     3
+## 12 Nokia   Nokia C~ Medi~ "Pow~    32     4   100  2.65e6             2020     2
+## 13 Nokia   Nokia 2~ Medi~ "Pow~    32     4   158  3.65e6             2019     2
+## 14 Nokia   Nokia 2~ Medi~ "Pow~    32     4   100  6.89e6             2019     3
+## 15 Nokia   Nokia 9~ Qual~ "Adr~   128     8   210  2.36e7             2019     6
+## 16 Nokia   Nokia 3~ Qual~ "Adr~    64     4   140  9.65e6             2019     2
+\end{verbatim}
+
+\#Afishimi per kompanine Sony
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart[}\DecValTok{85}\SpecialCharTok{:}\DecValTok{99}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 15 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Sony    Sony Xp~ Qual~ "Adr~   256     8  1200  5.69e6             2022    12
+##  2 Sony    Sony Xp~ Qual~ "Adr~   512     8  1160  1.03e7             2021    12
+##  3 Sony    Sony Xp~ Qual~ "Adr~   256     8  1090  1.36e7             2021    12
+##  4 Sony    Sony Xp~ Qual~ "Adr~   256     8   780  2.65e7             2021    12
+##  5 Sony    Sony Xp~ Qual~ "Adr~   256     8   500  1.36e7             2020     8
+##  6 Sony    Sony Xp~ Medi~ "Pow~    64     8   220  1.76e7             2020     3
+##  7 Sony    Sony Xp~ Qual~ "Adr~    64     8   280  2.13e7             2017     4
+##  8 Sony    Sony Xp~ Qual~ "Adr~    64     8   240  1.62e7             2018     6
+##  9 Sony    Sony Xp~ Qual~ "Adr~    64     8   260  9.26e6             2018     4
+## 10 Sony    Sony Xp~ Medi~ "Mal~    32     4   140  5.26e6             2018     3
+## 11 Sony    Sony Xp~ Medi~ "Mal~    16     4   200  7.27e6             2015     2
+## 12 Sony    Sony Xp~ Qual~ "Adr~    32     8   290  1.33e7             2015     3
+## 13 Sony    Sony Xp~ Qual~ "Adr~    16     4   190  6.25e6             2015     2
+## 14 Sony    Sony Xp~ Medi~ "Mal~     8     4   150  2.27e6             2015     1
+## 15 Sony    Sony Xp~ Qual~ "Adr~    32     4   370  1.13e7             2014     4
+\end{verbatim}
+
+\#Afishimi per kompanine LG
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart[}\DecValTok{100}\SpecialCharTok{:}\DecValTok{119}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 20 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 LG      LG W41+  Medi~ "Pow~   128     8   170  7.89e6             2021     4
+##  2 LG      LG W41   Medi~ "Pow~    64     8   160  1.56e7             2021     4
+##  3 LG      LG W31+  Medi~ "Pow~   128     8   120  1.33e7             2020     4
+##  4 LG      LG W11   Medi~ "Pow~    32     8   110  6.52e6             2020     2
+##  5 LG      LG K92 ~ Qual~ "Adr~   128     8   320  9.13e6             2020     6
+##  6 LG      LG Q52   Medi~ "Pow~    64     8   240  1.62e6             2020     4
+##  7 LG      LG K71   Medi~ "Pow~   128     8   180  2.15e6             2020     4
+##  8 LG      LG K22   Qual~ "Adr~    64     4   140  1.3 e6             2020     3
+##  9 LG      LG W10 ~ Unis~ "IMG"    32     4   130  6.20e5             2019     3
+## 10 LG      LG Velv~ Qual~ "Adr~   128     8   470  9.84e5             2020     8
+## 11 LG      LG Q St~ Medi~ "Mal~    64     8   300  1.30e6             2018     4
+## 12 LG      LG K11 ~ Medi~ "Mal~    32     4   130  5.00e5             2018     3
+## 13 LG      LG Q7    Medi~ "Adr~    64     8   150  2.50e6             2018     4
+## 14 LG      LG Zone~ Qual~ "Adr~    16     4   100  1.00e6             2018     2
+## 15 LG      LG Q6    Qual~ "Adr~    64     8   110  3.15e6             2017     4
+## 16 LG      LG Harm~ Qual~ "Adr~    16     4    90  9.00e5             2017     1
+## 17 LG      LG K3    Medi~ "Adr~     8     4   100  1.06e5             2016     1
+## 18 LG      LG Spir~ Qual~ "Adr~     8     4   120  2.50e6             2015     1
+## 19 LG      LG F60   Qual~ "Adr~     8     4   100  1.60e6             2015     1
+## 20 LG      LG V35 ~ Qual~ "Adr~   128     8   370  2.30e6             2018     6
+\end{verbatim}
+
+\#Afishimi per kompanine Honor
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart[}\DecValTok{120}\SpecialCharTok{:}\DecValTok{139}\NormalTok{,}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{,}\DecValTok{4}\NormalTok{,}\DecValTok{5}\NormalTok{,}\DecValTok{6}\NormalTok{,}\DecValTok{7}\NormalTok{,}\DecValTok{8}\NormalTok{,}\DecValTok{9}\NormalTok{,}\DecValTok{10}\NormalTok{)]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 20 x 10
+##    Company Device   CPU   GPU     ROM Cores Cmimi Shitjet `Viti i prodhi~`   RAM
+##    <chr>   <chr>    <chr> <chr> <dbl> <dbl> <dbl>   <dbl>            <dbl> <dbl>
+##  1 Honor   Honor P~ Qual~ Adre~   128     8   150  6.54e6             2022     8
+##  2 Honor   Honor P~ Medi~ Mali    256     8   200  3.25e6             2022     8
+##  3 Honor   Honor M~ Qual~ Adre~   128     8   430  2.15e6             2022     8
+##  4 Honor   Honor X9 Qual~ Adre~   128     8   230  4.20e6             2022     8
+##  5 Honor   Honor X8 Qual~ Adre~   128     8   240  3.60e6             2022     6
+##  6 Honor   Honor M~ Qual~ Adre~   256     8   900  1.09e7             2022    12
+##  7 Honor   Honor M~ Qual~ Adre~   256     8  1200  7.56e6             2022    12
+##  8 Honor   Honor X~ Qual~ Adre~   256     8   210  2.63e7             2021    12
+##  9 Honor   Honor 6~ Qual~ Adre~   256     8   520  1.25e7             2021     8
+## 10 Honor   Honor X~ Medi~ Mali    256     8   320  2.05e7             2021     8
+## 11 Honor   Honor P~ Medi~ Mali    256     8   240  1.32e7             2021     8
+## 12 Honor   Honor X~ Medi~ Mali    256     8   250  1.06e7             2021     8
+## 13 Honor   Honor P~ Medi~ Mali    128     8   200  5.61e6             2021     8
+## 14 Honor   Honor 5~ Qual~ Adre~   256     8   480  8.50e6             2021    12
+## 15 Honor   Honor P~ Medi~ Powe~   128     8   170  4.50e6             2021     8
+## 16 Honor   Honor X~ Medi~ Mali    128     8   240  8.80e6             2020     8
+## 17 Honor   Honor 3~ Medi~ Mali    128     8   220  1.01e7             2020     8
+## 18 Honor   Honor 8S Medi~ Powe~    64     4   110  3.25e6             2020     3
+## 19 Honor   Honor P~ Medi~ Mali    128     8   250  6.2 e6             2020     8
+## 20 Honor   Honor 3~ Kirin Mali    128     8   200  7.91e6             2020     4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#afishimi i llojeve te telefonave}
+\NormalTok{smart}\SpecialCharTok{$}\NormalTok{Device}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   [1] "iPhone 13 Pro Max"              "iPhone 13 Pro"                 
+##   [3] "iPhone 13 mini"                 "iPad Pro 12"                   
+##   [5] "Apple iPhone 12"                "Apple iPhone SE"               
+##   [7] "Apple iPhone 11 Pro Max"        "Apple iPhone XS"               
+##   [9] "Apple iPhone XR"                "Apple iPhone 4s"               
+##  [11] "Apple iPhone 3G"                "Apple iPhone 8"                
+##  [13] "Apple iPhone 7"                 "Apple iPhone 6s Plus"          
+##  [15] "Apple iPad mini 4"              "Samsung Galaxy S20 FE"         
+##  [17] "Samsung Galaxy S22 Ultra 5G"    "Samsung Galaxy Tab S8+"        
+##  [19] "Samsung Galaxy A03"             "Samsung Galaxy A12"            
+##  [21] "Samsung Galaxy F22"             "Samsung Galaxy F02s"           
+##  [23] "Samsung Galaxy A32"             "Samsung Galaxy S21 Ultra 5G"   
+##  [25] "Samsung Galaxy Note20 Ultra 5G" "Samsung Galaxy S7"             
+##  [27] "Samsung Galaxy A3"              "Samsung Galaxy V Plus"         
+##  [29] "Samsung Galaxy J5"              "Samsung Galaxy E5"             
+##  [31] "Samsung Galaxy Round G910S"     "Samsung Galaxy Note 3"         
+##  [33] "Huawei P50E"                    "Huawei nova 9 SE 5G"           
+##  [35] "Huawei nova 9"                  "Huawei P50"                    
+##  [37] "Huawei Mate 40E 4G"             "Huawei Mate X2 4G"             
+##  [39] "Huawei nova 8 Pro 4G"           "Huawei P40 lite"               
+##  [41] "Huawei P30 lite"                "Huawei nova 6"                 
+##  [43] "Huawei Mate 30 Pro 5G"          "Huawei Y9 Prime"               
+##  [45] "Huawei MediaPad T2"             "Huawei P9 lite"                
+##  [47] "Huawei Nexus 6P"                "Huawei Y6"                     
+##  [49] "Huawei Y7 Prime"                "Huawei Mate 20 Pro"            
+##  [51] "Huawei nova 3"                  "Xiaomi Redmi Note 11SE"        
+##  [53] "Xiaomi Redmi 10 Prime"          "Xiaomi Civi 1S"                
+##  [55] "Xiaomi Redmi 10 Power"          "Xiaomi Black Shark 5 RS"       
+##  [57] "Xiaomi Redmi Note 11S 5G"       "Xiaomi Redmi Note 10T"         
+##  [59] "Xiaomi Redmi Note 8"            "Xiaomi Mi 11 Pro"              
+##  [61] "Xiaomi Mi 9 Lite"               "Xiaomi Redmi Y3"               
+##  [63] "Xiaomi Redmi Note 7"            "Xiaomi Mi Max 3"               
+##  [65] "Xiaomi Mi 5"                    "Xiaomi Redmi 2A"               
+##  [67] "Xiaomi Redmi Note 4G"           "Xiaomi Redmi Note 8 Pro"       
+##  [69] "Nokia C21 Plus"                 "Nokia C21"                     
+##  [71] "Nokia G21"                      "Nokia G300"                    
+##  [73] "Nokia G50"                      "Nokia C30"                     
+##  [75] "Nokia C20"                      "Nokia C10"                     
+##  [77] "Nokia G10"                      "Nokia 3.4"                     
+##  [79] "Nokia C5 Endi"                  "Nokia C2 Tava"                 
+##  [81] "Nokia 2.3"                      "Nokia 2.2"                     
+##  [83] "Nokia 9 PureView"               "Nokia 3 V"                     
+##  [85] "Sony Xperia 1 IV"               "Sony Xperia Pro-I"             
+##  [87] "Sony Xperia 1 IV"               "Sony Xperia 1 III"             
+##  [89] "Sony Xperia 5 II"               "Sony Xperia L4"                
+##  [91] "Sony Xperia XZ1"                "Sony Xperia XA2 Plus"          
+##  [93] "Sony Xperia XA2 Ultra"          "Sony Xperia L2"                
+##  [95] "Sony Xperia C5 Ultra"           "Sony Xperia Z3+"               
+##  [97] "Sony Xperia M4 Aqua"            "Sony Xperia E4g Dual"          
+##  [99] "Sony Xperia Z3v"                "LG W41+"                       
+## [101] "LG W41"                         "LG W31+"                       
+## [103] "LG W11"                         "LG K92 5G"                     
+## [105] "LG Q52"                         "LG K71"                        
+## [107] "LG K22"                         "LG W10 Alpha"                  
+## [109] "LG Velvet 5G"                   "LG Q Stylus"                   
+## [111] "LG K11 Plus"                    "LG Q7"                         
+## [113] "LG Zone 4"                      "LG Q6"                         
+## [115] "LG Harmony"                     "LG K3"                         
+## [117] "LG Spirit"                      "LG F60"                        
+## [119] "LG V35 ThinQ"                   "Honor Play 30"                 
+## [121] "Honor Play6T Pro"               "Honor Magic4 Lite"             
+## [123] "Honor X9"                       "Honor X8"                      
+## [125] "Honor Magic4"                   "Honor Magic V"                 
+## [127] "Honor X30"                      "Honor 60 Pro"                  
+## [129] "Honor X30 Max"                  "Honor Play5 Youth"             
+## [131] "Honor X20"                      "Honor Play 5T Pro"             
+## [133] "Honor 50 Pro"                   "Honor Play 5T Youth"           
+## [135] "Honor X10 Max 5G"               "Honor 30 Youth"                
+## [137] "Honor 8S"                       "Honor Play4"                   
+## [139] "Honor 30i"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(hrbrthemes)}
+\CommentTok{\#grafiku qe tregon lidhjen mes kompanive dhe cpu}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}
+\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \StringTok{\textasciigrave{}}\AttributeTok{Company}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{fill =}\NormalTok{ CPU) }\SpecialCharTok{+}
+ \FunctionTok{geom\_bar}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{scale\_fill\_hue}\NormalTok{(}\AttributeTok{direction =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+ \FunctionTok{coord\_flip}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#grafiku qe tregon lidhjen mes ROM dhe shitjeve}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}
+\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Shitjet, }\AttributeTok{size =}\NormalTok{ ROM, }\AttributeTok{group =}\NormalTok{ RAM) }\SpecialCharTok{+}
+ \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =}\NormalTok{ 30L, }\AttributeTok{fill =} \StringTok{"\#A61AAB"}\NormalTok{) }\SpecialCharTok{+}
+ \FunctionTok{coord\_flip}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{facet\_wrap}\NormalTok{(}\FunctionTok{vars}\NormalTok{(Cores), }\AttributeTok{ncol =}\NormalTok{ 3L)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-12-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{library}\NormalTok{(dplyr)}
+\FunctionTok{library}\NormalTok{(hrbrthemes)}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}
+\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{, }\AttributeTok{fill =} \StringTok{\textasciigrave{}}\AttributeTok{Company}\StringTok{\textasciigrave{}}\NormalTok{) }\SpecialCharTok{+}
+ \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =}\NormalTok{ 32L) }\SpecialCharTok{+}
+ \FunctionTok{scale\_fill\_hue}\NormalTok{(}\AttributeTok{direction =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+ \FunctionTok{coord\_flip}\NormalTok{() }\SpecialCharTok{+}
+ \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\#mesatarja e ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 136
+\end{verbatim}
+
+\#mesatarja per cores
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 6.582734
+\end{verbatim}
+
+\#mesatarja per cmimin
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 362.8058
+\end{verbatim}
+
+\#mesatarja per shitjet
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 14201395
+\end{verbatim}
+
+\#mesatarja per RAM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{mean}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 5.446043
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#grafik qe tregon cfare cpu kane perdorur kompanite}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Company, }\AttributeTok{y =}\NormalTok{ CPU) }\SpecialCharTok{+}
+  \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_light}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-19-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#gpu dhe kompanite}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Company, }\AttributeTok{y =}\NormalTok{ GPU) }\SpecialCharTok{+}
+  \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Kompanite dhe GPU"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_light}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-19-2.pdf}
+
+\#mesorja per ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 128
+\end{verbatim}
+
+\#mesorja per Cores
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 8
+\end{verbatim}
+
+\#mesorja per cmimin
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 230
+\end{verbatim}
+
+\#mesorja per shitjet
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1e+07
+\end{verbatim}
+
+\#mesorja e RAM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{median}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni per te llogaritur moden ne ndryshore cilesore}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\CommentTok{\#moda per kompanite}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Company)}
+\CommentTok{\# gjej mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "LG"    "Honor"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni per moden}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\CommentTok{\#moda per llojin e telefonit}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Device)}
+
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Sony Xperia 1 IV"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni per moden}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\CommentTok{\#Moda per CPU}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{CPU)}
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Qualcomm"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ CPU) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{fill =} \StringTok{"\#4682B4"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_light}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-28-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moda per GPU}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{GPU)}
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Adreno"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni per te llogaritur moden}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ GPU) }\SpecialCharTok{+}
+  \FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{fill =} \StringTok{"\#4682B4"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_light}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-29-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moda per ROM}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 128
+\end{verbatim}
+
+\#funksioni per te llogaritur moden
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{  find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ ROM) }\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =}\NormalTok{ 30L, }\AttributeTok{fill =} \StringTok{"\#592C64"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_gray}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-30-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moda per SCORES}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 8
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# function to calculate mode}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Cores) }\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =}\NormalTok{ 30L, }\AttributeTok{fill =} \StringTok{"\#FF69B4"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_gray}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-30-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moda per Cmimin}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 200
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#function to calculate mode}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Cmimi) }\SpecialCharTok{+}
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =}\NormalTok{ 30L, }\AttributeTok{fill =} \StringTok{"\#487DA8"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_gray}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-30-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moda per Shitjet}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 10000000 13500900
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#function to calculate mode}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Shitjet) }\SpecialCharTok{+}
+  \FunctionTok{geom\_density}\NormalTok{(}\AttributeTok{adjust =}\NormalTok{ 1L, }\AttributeTok{fill =} \StringTok{"\#487DA8"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_gray}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-30-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#moda per Vitin}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{)}
+
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2021
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#function to calculate mode}
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{  u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_density}\NormalTok{(}\AttributeTok{adjust =}\NormalTok{ 1L, }\AttributeTok{fill =} \StringTok{"\#487DA8"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_gray}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-30-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#define numeric vector with multiple modes}
+\NormalTok{data }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+
+\CommentTok{\#find mode}
+\FunctionTok{find\_mode}\NormalTok{(data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 8
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{find\_mode }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(x) \{}
+\NormalTok{ u }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(x)}
+\NormalTok{  tab }\OtherTok{\textless{}{-}} \FunctionTok{tabulate}\NormalTok{(}\FunctionTok{match}\NormalTok{(x, u))}
+\NormalTok{  u[tab }\SpecialCharTok{==} \FunctionTok{max}\NormalTok{(tab)]}
+\NormalTok{\}}
+  
+\NormalTok{  smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =} \StringTok{""}\NormalTok{, }\AttributeTok{y =}\NormalTok{ RAM) }\SpecialCharTok{+}
+  \FunctionTok{geom\_violin}\NormalTok{(}\AttributeTok{adjust =}\NormalTok{ 1L, }\AttributeTok{scale =} \StringTok{"area"}\NormalTok{, }\AttributeTok{fill =} \StringTok{"\#487DA8"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_gray}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-30-6.pdf}
+\#vlera minimale per ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{min}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 8
+\end{verbatim}
+
+\#vlera minimale per Cores
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{min}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\#vlera minimale per cmimin
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{min}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 70
+\end{verbatim}
+
+\#vlera minimale per shitjet
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{min}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 105624
+\end{verbatim}
+
+\#vlera minimale per RAM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{min}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\#vlera max per ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{max}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 512
+\end{verbatim}
+
+\#vlera max per cores
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{max}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 8
+\end{verbatim}
+
+\#vlera max cmimi
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{max}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3120
+\end{verbatim}
+
+\#vlera max per numrin e shitjeve
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{max}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1.56e+08
+\end{verbatim}
+
+\#vlera max per RAM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{max}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 12
+\end{verbatim}
+
+\#kuantilet per ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{quantile}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   0%  25%  50%  75% 100% 
+##    8   64  128  256  512
+\end{verbatim}
+
+\#kuantilet per Cores
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{quantile}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   0%  25%  50%  75% 100% 
+##    1    4    8    8    8
+\end{verbatim}
+
+\#kuantilet per Cmimin
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{quantile}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   0%  25%  50%  75% 100% 
+##   70  150  230  385 3120
+\end{verbatim}
+
+\#kuantilet per Numrin e shitjeve
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{quantile}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        0%       25%       50%       75%      100% 
+##    105624   5545260  10000000  16500305 156000000
+\end{verbatim}
+
+\#kuantilet per RAM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{quantile}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   0%  25%  50%  75% 100% 
+##    1    3    4    8   12
+\end{verbatim}
+
+\#permbledhje per te dhenat
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(smart)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Company             Device              CPU                GPU           
+##  Length:139         Length:139         Length:139         Length:139        
+##  Class :character   Class :character   Class :character   Class :character  
+##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+##                                                                             
+##                                                                             
+##                                                                             
+##       ROM          Cores           Cmimi           Shitjet         
+##  Min.   :  8   Min.   :1.000   Min.   :  70.0   Min.   :   105624  
+##  1st Qu.: 64   1st Qu.:4.000   1st Qu.: 150.0   1st Qu.:  5545260  
+##  Median :128   Median :8.000   Median : 230.0   Median : 10000000  
+##  Mean   :136   Mean   :6.583   Mean   : 362.8   Mean   : 14201395  
+##  3rd Qu.:256   3rd Qu.:8.000   3rd Qu.: 385.0   3rd Qu.: 16500305  
+##  Max.   :512   Max.   :8.000   Max.   :3120.0   Max.   :156000000  
+##  Viti i prodhimit      RAM        
+##  Min.   :2008     Min.   : 1.000  
+##  1st Qu.:2018     1st Qu.: 3.000  
+##  Median :2020     Median : 4.000  
+##  Mean   :2019     Mean   : 5.446  
+##  3rd Qu.:2021     3rd Qu.: 8.000  
+##  Max.   :2022     Max.   :12.000
+\end{verbatim}
+
+\#varianca e ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 10022.96
+\end{verbatim}
+
+\#varianca e cores
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4.042019
+\end{verbatim}
+
+\#varianca per cmimin
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 152318.9
+\end{verbatim}
+
+\#varianca per shitjet
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3.326072e+14
+\end{verbatim}
+
+\#varianca per RAM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{var}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 9.930039
+\end{verbatim}
+
+\#menjanimi mesatar katror per ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 100.1147
+\end{verbatim}
+
+\#menjanimi mesatar katror per cORE
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2.010477
+\end{verbatim}
+
+\#menjanimi mesatar katror per cmimin
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 390.2806
+\end{verbatim}
+
+\#menjanimi mesatar katror per shitjet
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sd}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3.151196
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#ram,rom,kompani,gpu}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ RAM, }\AttributeTok{y =}\NormalTok{ ROM, }\AttributeTok{colour =}\NormalTok{ Company) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{shape =} \StringTok{"asterisk"}\NormalTok{, }\AttributeTok{size =} \FloatTok{1.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_brewer}\NormalTok{(}\AttributeTok{palette =} \StringTok{"PuBu"}\NormalTok{, }\AttributeTok{direction =} \SpecialCharTok{{-}}\DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_dark}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\FunctionTok{vars}\NormalTok{(GPU))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-56-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ RAM, }\AttributeTok{y =}\NormalTok{ Shitjet, }\AttributeTok{colour =}\NormalTok{ Company) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{shape =} \StringTok{"asterisk"}\NormalTok{, }\AttributeTok{size =} \FloatTok{1.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_brewer}\NormalTok{(}\AttributeTok{palette =} \StringTok{"YlOrRd"}\NormalTok{, }\AttributeTok{direction =} \SpecialCharTok{{-}}\DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Si ka ndikuar RAM dhe GPU ne shitje"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_dark}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\FunctionTok{vars}\NormalTok{(GPU))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-57-1.pdf}
+
+\#tabela e kontigjences per kompanine dhe CPU dhe testi hi-katror
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Company, smart}\SpecialCharTok{$}\NormalTok{CPU)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          
+##           Apple A10 Fusion Apple A11 Bionic Apple A12 Bionic Apple A13 Bionic
+##   Apple                  1                1                2                2
+##   Honor                  0                0                0                0
+##   Huawei                 0                0                0                0
+##   LG                     0                0                0                0
+##   Nokia                  0                0                0                0
+##   Samsung                0                0                0                0
+##   Sony                   0                0                0                0
+##   Xiaomi                 0                0                0                0
+##          
+##           Apple A14 Bionic Apple A15 Bionic Apple A5 Apple A8 Apple A9 Apple M1
+##   Apple                  1                3        1        1        1        1
+##   Honor                  0                0        0        0        0        0
+##   Huawei                 0                0        0        0        0        0
+##   LG                     0                0        0        0        0        0
+##   Nokia                  0                0        0        0        0        0
+##   Samsung                0                0        0        0        0        0
+##   Sony                   0                0        0        0        0        0
+##   Xiaomi                 0                0        0        0        0        0
+##          
+##           ARM 11 ARM Cortex Exynos Kirin Leadcore Mediatek MediaTek Qualcomm
+##   Apple        1          0      0     0        0        0        0        0
+##   Honor        0          0      0     1        0        3        7        9
+##   Huawei       0          0      0    11        0        0        0        8
+##   LG           0          0      0     0        0        8        2        8
+##   Nokia        0          0      0     0        0        4        1        5
+##   Samsung      0          1      4     0        0        2        0        9
+##   Sony         0          0      0     0        0        3        1       11
+##   Xiaomi       0          0      0     0        1        1        5        9
+##          
+##           Qualcomm   Unisoc
+##   Apple            0      0
+##   Honor            0      0
+##   Huawei           0      0
+##   LG               1      1
+##   Nokia            0      6
+##   Samsung          0      1
+##   Sony             0      0
+##   Xiaomi           1      0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(}\StringTok{"MASS"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attache Paket: 'MASS'
+\end{verbatim}
+
+\begin{verbatim}
+## Das folgende Objekt ist maskiert 'package:dplyr':
+## 
+##     select
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# krijojme dataframin nga dataseti i madh}
+\NormalTok{smart.data }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{CPU,smart}\SpecialCharTok{$}\NormalTok{Company)}
+
+\CommentTok{\#krijojme tabelen}
+\NormalTok{smart.data }\OtherTok{=} \FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{CPU,smart}\SpecialCharTok{$}\NormalTok{Company) }
+\FunctionTok{print}\NormalTok{(smart.data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                   
+##                    Apple Honor Huawei LG Nokia Samsung Sony Xiaomi
+##   Apple A10 Fusion     1     0      0  0     0       0    0      0
+##   Apple A11 Bionic     1     0      0  0     0       0    0      0
+##   Apple A12 Bionic     2     0      0  0     0       0    0      0
+##   Apple A13 Bionic     2     0      0  0     0       0    0      0
+##   Apple A14 Bionic     1     0      0  0     0       0    0      0
+##   Apple A15 Bionic     3     0      0  0     0       0    0      0
+##   Apple A5             1     0      0  0     0       0    0      0
+##   Apple A8             1     0      0  0     0       0    0      0
+##   Apple A9             1     0      0  0     0       0    0      0
+##   Apple M1             1     0      0  0     0       0    0      0
+##   ARM 11               1     0      0  0     0       0    0      0
+##   ARM Cortex           0     0      0  0     0       1    0      0
+##   Exynos               0     0      0  0     0       4    0      0
+##   Kirin                0     1     11  0     0       0    0      0
+##   Leadcore             0     0      0  0     0       0    0      1
+##   Mediatek             0     3      0  8     4       2    3      1
+##   MediaTek             0     7      0  2     1       0    1      5
+##   Qualcomm             0     9      8  8     5       9   11      9
+##   Qualcomm             0     0      0  1     0       0    0      1
+##   Unisoc               0     0      0  1     6       1    0      0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# funksioni per hi{-}katrorin}
+\FunctionTok{print}\NormalTok{(}\FunctionTok{chisq.test}\NormalTok{(smart.data))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in chisq.test(smart.data): Chi-squared approximation may be incorrect
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Pearson's Chi-squared test
+## 
+## data:  smart.data
+## X-squared = 315.72, df = 133, p-value < 2.2e-16
+\end{verbatim}
+
+\#tabela e kontigjences dhe testi hi katror qe tregon nese dy ndryshore
+cilesore GPU dhe kompanine
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Company, smart}\SpecialCharTok{$}\NormalTok{GPU)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          
+##           Adrene Adreno Adreno \r\n Adreno\r\n Apple GPU ARM Mali IMG IMG\r\n
+##   Apple        0      0           0          0        10        0   0       0
+##   Honor        0      9           0          0         0        0   0       0
+##   Huawei       1      7           0          0         0        0   0       0
+##   LG           0     11           0          0         0        0   1       0
+##   Nokia        0      1           4          0         0        0   2       2
+##   Samsung      0      8           0          0         0        1   1       0
+##   Sony         0      1           7          3         0        0   0       0
+##   Xiaomi       0      6           4          0         0        0   0       0
+##          
+##           Mali Mali\r\n PowerVR PowerVR \r\n
+##   Apple      0        0       4            1
+##   Honor      9        0       2            0
+##   Huawei     8        3       0            0
+##   LG         2        0       4            2
+##   Nokia      0        2       1            4
+##   Samsung    7        0       0            0
+##   Sony       1        2       0            1
+##   Xiaomi     3        4       0            0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(}\StringTok{"MASS"}\NormalTok{)}
+
+\CommentTok{\# krijojme nje dtaframe nga dataseti}
+\NormalTok{smart.data }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{GPU,smart}\SpecialCharTok{$}\NormalTok{Company)}
+
+\CommentTok{\# krijojme tabelen}
+\NormalTok{smart.data }\OtherTok{=} \FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{GPU,smart}\SpecialCharTok{$}\NormalTok{Company) }
+\FunctionTok{print}\NormalTok{(smart.data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##               
+##                Apple Honor Huawei LG Nokia Samsung Sony Xiaomi
+##   Adrene           0     0      1  0     0       0    0      0
+##   Adreno           0     9      7 11     1       8    1      6
+##   Adreno \r\n      0     0      0  0     4       0    7      4
+##   Adreno\r\n       0     0      0  0     0       0    3      0
+##   Apple GPU       10     0      0  0     0       0    0      0
+##   ARM Mali         0     0      0  0     0       1    0      0
+##   IMG              0     0      0  1     2       1    0      0
+##   IMG\r\n          0     0      0  0     2       0    0      0
+##   Mali             0     9      8  2     0       7    1      3
+##   Mali\r\n         0     0      3  0     2       0    2      4
+##   PowerVR          4     2      0  4     1       0    0      0
+##   PowerVR \r\n     1     0      0  2     4       0    1      0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni per hi{-}katrorin}
+\FunctionTok{print}\NormalTok{(}\FunctionTok{chisq.test}\NormalTok{(smart.data))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in chisq.test(smart.data): Chi-squared approximation may be incorrect
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Pearson's Chi-squared test
+## 
+## data:  smart.data
+## X-squared = 261.37, df = 77, p-value < 2.2e-16
+\end{verbatim}
+
+\#tabela e kontigjences per vitin dhe kompanine tregon sa telefona ka
+prodhuar secila kompani per vite
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Company, smart}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          
+##           2008 2011 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022
+##   Apple      1    1    0    0    2    2    1    2    1    1    4    0
+##   Honor      0    0    0    0    0    0    0    0    0    5    8    7
+##   Huawei     0    0    0    0    2    2    0    2    3    3    6    1
+##   LG         0    0    0    0    2    1    2    5    1    7    2    0
+##   Nokia      0    0    0    0    0    0    0    0    4    3    6    3
+##   Samsung    0    0    1    0    5    1    0    0    0    1    6    3
+##   Sony       0    0    0    1    4    0    1    3    0    2    3    1
+##   Xiaomi     0    0    0    1    1    1    0    1    4    0    3    6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#testi hi katror qe tregon nese dy ndryshore cilesore jane te varura apo jo}
+
+\FunctionTok{library}\NormalTok{(}\StringTok{"MASS"}\NormalTok{)}
+
+\CommentTok{\# krijojme dataframin nga dataseti}
+\NormalTok{smart.data }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Company,smart}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{)}
+
+\CommentTok{\# krijojme tabelen.}
+\NormalTok{smart.data }\OtherTok{=} \FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Company,smart}\SpecialCharTok{$}\StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{) }
+\FunctionTok{print}\NormalTok{(smart.data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##          
+##           2008 2011 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022
+##   Apple      1    1    0    0    2    2    1    2    1    1    4    0
+##   Honor      0    0    0    0    0    0    0    0    0    5    8    7
+##   Huawei     0    0    0    0    2    2    0    2    3    3    6    1
+##   LG         0    0    0    0    2    1    2    5    1    7    2    0
+##   Nokia      0    0    0    0    0    0    0    0    4    3    6    3
+##   Samsung    0    0    1    0    5    1    0    0    0    1    6    3
+##   Sony       0    0    0    1    4    0    1    3    0    2    3    1
+##   Xiaomi     0    0    0    1    1    1    0    1    4    0    3    6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# funksioni per hi{-}katrorin}
+\FunctionTok{print}\NormalTok{(}\FunctionTok{chisq.test}\NormalTok{(smart.data))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in chisq.test(smart.data): Chi-squared approximation may be incorrect
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Pearson's Chi-squared test
+## 
+## data:  smart.data
+## X-squared = 115.87, df = 77, p-value = 0.002783
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Company, }\AttributeTok{y =} \StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{geom\_violin}\NormalTok{(}\AttributeTok{adjust =}\NormalTok{ 1L, }\AttributeTok{scale =} \StringTok{"area"}\NormalTok{, }\AttributeTok{fill =} \StringTok{"\#FF8C00"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-62-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#testi hi katror qe tregon nese dy ndryshore cilesore jane te varura apo jo}
+
+\FunctionTok{library}\NormalTok{(}\StringTok{"MASS"}\NormalTok{)}
+
+\CommentTok{\# .krijojme dataframin nga dataseti}
+\NormalTok{car.data }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{GPU,smart}\SpecialCharTok{$}\NormalTok{CPU)}
+
+\CommentTok{\# krijojme tabelen}
+\NormalTok{smart.data }\OtherTok{=} \FunctionTok{table}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{GPU,smart}\SpecialCharTok{$}\NormalTok{CPU) }
+\FunctionTok{print}\NormalTok{(smart.data)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##               
+##                Apple A10 Fusion Apple A11 Bionic Apple A12 Bionic
+##   Adrene                      0                0                0
+##   Adreno                      0                0                0
+##   Adreno \r\n                 0                0                0
+##   Adreno\r\n                  0                0                0
+##   Apple GPU                   0                1                2
+##   ARM Mali                    0                0                0
+##   IMG                         0                0                0
+##   IMG\r\n                     0                0                0
+##   Mali                        0                0                0
+##   Mali\r\n                    0                0                0
+##   PowerVR                     1                0                0
+##   PowerVR \r\n                0                0                0
+##               
+##                Apple A13 Bionic Apple A14 Bionic Apple A15 Bionic Apple A5
+##   Adrene                      0                0                0        0
+##   Adreno                      0                0                0        0
+##   Adreno \r\n                 0                0                0        0
+##   Adreno\r\n                  0                0                0        0
+##   Apple GPU                   2                1                3        0
+##   ARM Mali                    0                0                0        0
+##   IMG                         0                0                0        0
+##   IMG\r\n                     0                0                0        0
+##   Mali                        0                0                0        0
+##   Mali\r\n                    0                0                0        0
+##   PowerVR                     0                0                0        1
+##   PowerVR \r\n                0                0                0        0
+##               
+##                Apple A8 Apple A9 Apple M1 ARM 11 ARM Cortex Exynos Kirin
+##   Adrene              0        0        0      0          0      0     0
+##   Adreno              0        0        0      0          0      0     0
+##   Adreno \r\n         0        0        0      0          0      0     0
+##   Adreno\r\n          0        0        0      0          0      0     0
+##   Apple GPU           0        0        1      0          0      0     0
+##   ARM Mali            0        0        0      0          1      0     0
+##   IMG                 0        0        0      0          0      0     0
+##   IMG\r\n             0        0        0      0          0      0     0
+##   Mali                0        0        0      0          0      4     9
+##   Mali\r\n            0        0        0      0          0      0     3
+##   PowerVR             1        1        0      0          0      0     0
+##   PowerVR \r\n        0        0        0      1          0      0     0
+##               
+##                Leadcore Mediatek MediaTek Qualcomm Qualcomm   Unisoc
+##   Adrene              0        0        0        1          0      0
+##   Adreno              0        2        0       40          1      0
+##   Adreno \r\n         0        0        0       14          1      0
+##   Adreno\r\n          0        0        0        3          0      0
+##   Apple GPU           0        0        0        0          0      0
+##   ARM Mali            0        0        0        0          0      0
+##   IMG                 0        0        0        0          0      4
+##   IMG\r\n             0        0        0        0          0      2
+##   Mali                0        5       11        1          0      0
+##   Mali\r\n            1        3        2        0          0      2
+##   PowerVR             0        6        1        0          0      0
+##   PowerVR \r\n        0        5        2        0          0      0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#funksioni per hi{-}katrorin}
+\FunctionTok{print}\NormalTok{(}\FunctionTok{chisq.test}\NormalTok{(smart.data))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in chisq.test(smart.data): Chi-squared approximation may be incorrect
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Pearson's Chi-squared test
+## 
+## data:  smart.data
+## X-squared = 620.84, df = 209, p-value < 2.2e-16
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ CPU, }\AttributeTok{y =}\NormalTok{ GPU) }\SpecialCharTok{+}
+  \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.2}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-64-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+
+\CommentTok{\# Aplikojme funksionin linear.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\FunctionTok{print}\NormalTok{(relation)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##    14647271        -1229
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#reja e pikave}
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+
+\FunctionTok{plot}\NormalTok{(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-65-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+
+\CommentTok{\# The resposne vector.}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Shitjet)}
+
+\CommentTok{\# Apply the lm() function.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\CommentTok{\# parashikojme sa shitje do te kete nqs kemi nje cmim te caktuar}
+\NormalTok{a }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{x =}\DecValTok{1500}\NormalTok{)}
+\NormalTok{result }\OtherTok{\textless{}{-}}  \FunctionTok{predict}\NormalTok{(relation,a)}
+\FunctionTok{print}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 12803823
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Shitjet, }\AttributeTok{y =}\NormalTok{ Cmimi) }\SpecialCharTok{+}
+  \FunctionTok{geom\_area}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-66-1.pdf}
+
+\#regresi linear cmimin dhe ROM
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+
+\CommentTok{\#funksioni}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\FunctionTok{print}\NormalTok{(relation)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##      83.761        0.144
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#reja e pikave}
+\FunctionTok{plot}\NormalTok{(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-67-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+
+\CommentTok{\# Apply the lm() function.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\CommentTok{\# parashikojme sa ROM do te kete nqs kemi nje cmim te caktuar}
+\NormalTok{a }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{x =} \DecValTok{300}\NormalTok{)}
+\NormalTok{result }\OtherTok{\textless{}{-}}  \FunctionTok{predict}\NormalTok{(relation,a)}
+\FunctionTok{print}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 126.9568
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+
+\CommentTok{\#funksioni}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\FunctionTok{print}\NormalTok{(relation)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##     2.48056      0.02181
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-68-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{ROM)}
+
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+
+\CommentTok{\# Apply the lm() function.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\CommentTok{\# parashikojme sa ROM do te kete nqs kemi nje cmim te caktuar}
+\NormalTok{a }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{x =}\DecValTok{100}\NormalTok{)}
+\NormalTok{result }\OtherTok{\textless{}{-}}  \FunctionTok{predict}\NormalTok{(relation,a)}
+\FunctionTok{print}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 4.661063
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+
+\CommentTok{\#funksioni}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\FunctionTok{print}\NormalTok{(relation)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##    4.034138     0.003892
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-69-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+
+\CommentTok{\# Apply the lm() function.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\CommentTok{\# parashikojme sa RAM do te kete nqs kemi nje cmim te caktuar}
+\NormalTok{a }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{x =} \DecValTok{300}\NormalTok{)}
+\NormalTok{result }\OtherTok{\textless{}{-}}  \FunctionTok{predict}\NormalTok{(relation,a)}
+\FunctionTok{print}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 5.201627
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+
+\CommentTok{\#funksioni}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\FunctionTok{print}\NormalTok{(relation)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##    6.091156     0.001355
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-70-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cmimi)}
+
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+
+\CommentTok{\# Apply the lm() function.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\CommentTok{\# parashikojme sa cores do te kete nqs kemi nje cmim te caktuar}
+\NormalTok{a }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{x =} \DecValTok{300}\NormalTok{)}
+\NormalTok{result }\OtherTok{\textless{}{-}}  \FunctionTok{predict}\NormalTok{(relation,a)}
+\FunctionTok{print}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 6.497636
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+
+\CommentTok{\#funksioni}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\FunctionTok{print}\NormalTok{(relation)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##      4.5922       0.3655
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x,y)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-71-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{RAM)}
+
+\NormalTok{y }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(smart}\SpecialCharTok{$}\NormalTok{Cores)}
+
+\CommentTok{\# Apply the lm() function.}
+\NormalTok{relation }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x)}
+
+\CommentTok{\# parashikojme sa RAM do te kete nqs kemi nje cmim te caktuar}
+\NormalTok{a }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{x =}\DecValTok{8}\NormalTok{)}
+\NormalTok{result }\OtherTok{\textless{}{-}}  \FunctionTok{predict}\NormalTok{(relation,a)}
+\FunctionTok{print}\NormalTok{(result)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##        1 
+## 7.516222
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#grafik}
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ Cores, }\AttributeTok{y =}\NormalTok{ Cmimi, }\AttributeTok{fill =}\NormalTok{ ROM, }\AttributeTok{colour =}\NormalTok{ Company) }\SpecialCharTok{+}
+  \FunctionTok{geom\_tile}\NormalTok{(}\AttributeTok{size =} \FloatTok{1.5}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_fill\_gradient}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_hue}\NormalTok{(}\AttributeTok{direction =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\FunctionTok{vars}\NormalTok{(Company))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-72-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{smart }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{filter}\NormalTok{(}\SpecialCharTok{!}\NormalTok{(GPU }\SpecialCharTok{\%in\%} \FunctionTok{c}\NormalTok{(}\StringTok{"PowerVR }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Mali}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno }\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"IMG}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{, }\StringTok{"Adreno}\SpecialCharTok{\textbackslash{}r\textbackslash{}n}\StringTok{"}\NormalTok{))) }\SpecialCharTok{\%\textgreater{}\%}
+ \FunctionTok{ggplot}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{aes}\NormalTok{(}
+    \AttributeTok{x =}\NormalTok{ Cmimi,}
+    \AttributeTok{y =}\NormalTok{ Shitjet,}
+    \AttributeTok{fill =} \StringTok{\textasciigrave{}}\AttributeTok{Viti i prodhimit}\StringTok{\textasciigrave{}}\NormalTok{,}
+    \AttributeTok{colour =}\NormalTok{ Company}
+\NormalTok{  ) }\SpecialCharTok{+}
+  \FunctionTok{geom\_line}\NormalTok{(}\AttributeTok{size =} \FloatTok{3.05}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{scale\_fill\_gradient}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{scale\_color\_hue}\NormalTok{(}\AttributeTok{direction =} \DecValTok{1}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Kompanite"}\NormalTok{) }\SpecialCharTok{+}
+  \FunctionTok{theme\_minimal}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{facet\_wrap}\NormalTok{(}\FunctionTok{vars}\NormalTok{(Company))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{Smartphones_files/figure-latex/unnamed-chunk-73-1.pdf}
+
+Note that the \texttt{echo\ =\ FALSE} parameter was added to the code
+chunk to prevent printing of the R code that generated the plot.
+
+\end{document}
